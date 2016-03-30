@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class Dialog {
     public static void main(String[] args) {
 
-        int answer1 = JOptionPane.showConfirmDialog(null,"Do you like me ?");
+        int answer1 = JOptionPane.showConfirmDialog(null,"Is this a dialog?");
         System.out.println("The answer is " + answer1);
 
         JOptionPane.showMessageDialog(null,"This is a dialog that shows message",
