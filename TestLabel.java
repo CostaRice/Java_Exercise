@@ -8,7 +8,7 @@ public class TestLabel {
         label:while (true){
             while (true){
                 if (i%2 == 0)
-                  break ;
+                  break;
                 if (s>50)
                   break label;
                 s += i++;
