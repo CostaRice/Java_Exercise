@@ -38,5 +38,14 @@ public class StringDemo {
 
         /* Other methods like equals() is listed here : equalsIgnoreCase()  CompareTo()
         compareToIgnore() regionMatches() */
+
+        //Show the usage of regionMatches()
+        String str5 = "Welcome to tutorials";
+        String str6 = new String("tutorials");
+        String str7 = "TUTORIALS";
+
+        System.out.println("Return Value: " + str5.regionMatches(11,str6,0,9));
+        System.out.println("Return Value: "+ str6.regionMatches(true,0,str7,0,9));
+
     }
 }
