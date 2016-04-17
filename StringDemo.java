@@ -47,5 +47,12 @@ public class StringDemo {
         System.out.println("Return Value: " + str5.regionMatches(11,str6,0,9));
         System.out.println("Return Value: "+ str6.regionMatches(true,0,str7,0,9));
 
+        //Show the usage of String.split();
+        //Splits this string around matches of the given regular expression.
+        String[] str8 = "Java#HTML#Perl".split("#",0);
+        for(int i=0;i<str8.length;i++){
+            System.out.print(str8[i]+" ");
+        }
+
     }
 }
