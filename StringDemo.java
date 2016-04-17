@@ -2,7 +2,6 @@
  * Created by CostaHu on 2016/4/14.
  */
 public class StringDemo {
-
     public static void main(String[] args) {
         /*
         The String class represents character strings.
@@ -57,5 +56,10 @@ public class StringDemo {
         //Show usages of some regular expressions
         String str9 ="a+b$#c";
         System.out.println(str9.replaceAll("[$+#]","NNN"));
+
+        String[] str10 = "Java,C?C#,C++".split("[.,;:?]");
+        for(int i = 0;i<str10.length;i++){
+            System.out.println(str10[i]);
+        }
     }
 }
