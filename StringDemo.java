@@ -2,6 +2,7 @@
  * Created by CostaHu on 2016/4/14.
  */
 public class StringDemo {
+
     public static void main(String[] args) {
         /*
         The String class represents character strings.
@@ -51,8 +52,10 @@ public class StringDemo {
         //Splits this string around matches of the given regular expression.
         String[] str8 = "Java#HTML#Perl".split("#",0);
         for(int i=0;i<str8.length;i++){
-            System.out.print(str8[i]+" ");
+            System.out.println(str8[i]);
         }
-
+        //Show usages of some regular expressions
+        String str9 ="a+b$#c";
+        System.out.println(str9.replaceAll("[$+#]","NNN"));
     }
 }
