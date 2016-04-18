@@ -53,13 +53,25 @@ public class StringDemo {
         for(int i=0;i<str8.length;i++){
             System.out.println(str8[i]);
         }
+
         //Show usages of some regular expressions
         String str9 ="a+b$#c";
         System.out.println(str9.replaceAll("[$+#]","NNN"));
-
         String[] str10 = "Java,C?C#,C++".split("[.,;:?]");
         for(int i = 0;i<str10.length;i++){
             System.out.println(str10[i]);
+        }
+
+        //Show convert between string and char array
+        String str11 = new String(new char[]{'J','a','v','a'});
+        System.out.println(str11);
+        String str12 = String.valueOf(new char[]{'J','a','v','a'});
+        System.out.println(str12);
+
+        //Show conversion from string to char array
+        char[] str13 = "Java".toCharArray();
+        for(int i= 0;i<str13.length;i++){
+            System.out.println(str13[i]);
         }
     }
 }
