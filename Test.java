@@ -1,6 +1,8 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
 
+import static java.lang.Integer.MAX_VALUE;
+
 /**
  * Created by CostaHu on 2016/4/6.
  */
@@ -22,5 +24,7 @@ public class Test {
         variable.init(10,30);
         System.out.println("*****AFTER INIT*****");
         System.out.println(variable.x+variable.y+variable.z);
+        //Show overflow of max value of type int
+        System.out.println(MAX_VALUE+1);
     }
 }
