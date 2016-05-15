@@ -9,6 +9,7 @@ public class Circle1 {
                 " is " +circle1.getArea() );
 
         Circle1 circle12 = new Circle1();
+        System.out.println(circle12.toString());
     }
     double radius;
     Circle1(){
